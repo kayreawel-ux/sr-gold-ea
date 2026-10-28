@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SR Gold EA | XAUUSD Trading Tool</title>
+<meta name="description" content="A transparent, risk-controlled starter Expert Advisor for MetaTrader 5 using support, resistance and candle rejection.">
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--card:#141c31;--text:#f4f6ff;--muted:#b8c1d9;--accent:#f2c66d;--line:#2a3552}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(150deg,#0b1020,#101a2d);color:var(--text);line-height:1.6}
+main{max-width:960px;margin:auto;padding:24px 18px 60px}.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0 28px}.brand{font-weight:800;letter-spacing:.4px}.pill{border:1px solid var(--line);border-radius:99px;padding:6px 11px;color:var(--muted);font-size:.85rem}
+.hero{padding:36px 0 28px}.eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1.6px;font-size:.8rem}h1{font-size:clamp(2.2rem,7vw,4.3rem);line-height:1.05;margin:14px 0}p{color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.btn{display:inline-block;background:var(--accent);color:#171717;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:10px}.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0}.card{background:rgba(20,28,49,.92);border:1px solid var(--line);border-radius:16px;padding:20px}.card h2,.card h3{margin-top:0}.price{font-size:2.4rem;font-weight:850;color:var(--accent)}ul{padding-left:22px;color:var(--muted)}li{margin:7px 0}.notice{border-left:4px solid var(--accent);padding:12px 16px;background:#171e30;border-radius:8px;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:34px;padding-top:20px;color:var(--muted);font-size:.9rem}a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+  <div class="nav"><div class="brand">SR GOLD EA</div><span class="pill">MetaTrader 5 · XAUUSD</span></div>
+  <section class="hero">
+    <div class="eyebrow">Support & Resistance · Candle Rejection</div>
+    <h1>A disciplined starting point for Gold trading automation.</h1>
+    <p>SR Gold EA is a MetaTrader 5 Expert Advisor template that looks for a closed-candle rejection near recent support or resistance. It includes stop-loss, take-profit and position sizing based on a configurable risk percentage.</p>
+    <div class="actions">
+      <a class="btn" href="#buy">Purchase information</a>
+      <a class="btn secondary" href="#method">How it works</a>
+    </div>
+  </section>
+
+  <section class="grid">
+    <article class="card"><h3>Defined entry rules</h3><p>Checks recent swing range and candle-wick rejection on a selected timeframe.</p></article>
+    <article class="card"><h3>Risk controls</h3><p>Configurable risk percentage, stop-loss, reward-to-risk target and spread filter.</p></article>
+    <article class="card"><h3>Demo-first workflow</h3><p>Test and review results before considering any live trading.</p></article>
+  </section>
+
+  <section id="method" class="card">
+    <h2>How the EA works</h2>
+    <ul>
+      <li>Calculates a recent support level from the lowest low and resistance from the highest high.</li>
+      <li>Waits for a fully closed candle to show a rejection pattern near a level.</li>
+      <li>Places a trade only if trading is allowed, spread is within the configured limit and no matching EA position is open.</li>
+      <li>Sets a stop-loss beyond the signal candle and a take-profit based on the selected reward-to-risk ratio.</li>
+    </ul>
+    <p>Broker symbol names, contract specifications, minimum volume and spread differ. Settings must be checked on your own demo account.</p>
+  </section>
+
+  <section id="buy" class="grid">
+    <article class="card">
+      <h2>SR Gold EA</h2>
+      <div class="price">$25</div>
+      <p>One-time price proposed for the initial version. Do not accept payment until the EA is compiled, tested and the delivery process is ready.</p>
+      <h3>What the buyer should receive</h3>
+      <ul><li>Compiled EA file (.ex5)</li><li>Setup guide</li><li>Default parameter guide</li><li>Risk disclosure and version number</li></ul>
+      <p><strong>Payment:</strong> USDT, only after the seller has added and verified their own payment instructions.</p>
+      <p class="notice">Payment instructions are not configured yet. This page does not collect payments and does not automatically verify blockchain transactions.</p>
+    </article>
+    <article class="card">
+      <h2>Contact / Order</h2>
+      <p>Replace the placeholder below with a business email or messaging link you control before publishing.</p>
+      <p><strong>Seller contact:</strong> Add your contact details here.</p>
+      <p><strong>USDT network:</strong> Specify one network clearly, and verify the receiving address. Never ask customers to send to an address you have not checked.</p>
+      <p>For now, this is a product-information page, not an automated checkout.</p>
+    </article>
+  </section>
+
+  <section class="notice">
+    <strong>Risk disclosure:</strong> Trading gold and other leveraged products can cause substantial losses. This EA is provided as a software tool, not financial advice or a promise of profit. Backtests and past performance do not guarantee future results. Test on demo first and use only risk capital.
+  </section>
+
+  <footer>
+    <p>© 2026 SR Gold EA. Replace this brand name, contact details, terms, privacy information and payment process before public sale.</p>
+  </footer>
+</main>
+</body>
+</html>
